@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import EnquiryForm from "./EnquiryForm";
 
 import { getFeaturedVehicles } from "@/utils/supabase/vehicles";
 
@@ -240,109 +241,7 @@ export default async function ContactPage() {
           </div>
 
           {/* Form */}
-          <form className="space-y-12">
-            <div>
-              <label
-                htmlFor="name"
-                className="mb-4 block text-[9px] uppercase tracking-[0.22em] text-white/35"
-              >
-                01 / Your name
-              </label>
-
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Your full name"
-                className="w-full border-b border-white/15 bg-transparent py-4 text-lg font-light text-white outline-none placeholder:text-white/20 focus:border-white/60"
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="email"
-                className="mb-4 block text-[9px] uppercase tracking-[0.22em] text-white/35"
-              >
-                02 / Email address
-              </label>
-
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-                className="w-full border-b border-white/15 bg-transparent py-4 text-lg font-light text-white outline-none placeholder:text-white/20 focus:border-white/60"
-              />
-            </div>
-
-            <div>
-              <p className="mb-5 text-[9px] uppercase tracking-[0.22em] text-white/35">
-                03 / I&apos;m interested in
-              </p>
-
-              <div className="grid gap-3 sm:grid-cols-2">
-                {[
-                  "A vehicle",
-                  "Private viewing",
-                  "Trade-in",
-                  "Service",
-                ].map((option) => (
-                  <label
-                    key={option}
-                    className="group cursor-pointer border border-white/10 px-5 py-5 transition-colors hover:border-[#9e6d48]"
-                  >
-                    <input
-                      type="radio"
-                      name="interest"
-                      value={option}
-                      className="sr-only"
-                    />
-
-                    <span className="flex items-center justify-between text-[10px] uppercase tracking-[0.16em] text-white/55 group-hover:text-white">
-                      {option}
-
-                      <span className="h-3 w-3 border border-white/25 transition-colors group-hover:border-[#9e6d48]" />
-                    </span>
-                  </label>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <label
-                htmlFor="message"
-                className="mb-4 block text-[9px] uppercase tracking-[0.22em] text-white/35"
-              >
-                04 / Tell us more
-              </label>
-
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                placeholder="Tell us what you're looking for..."
-                className="w-full resize-none border-b border-white/15 bg-transparent py-4 text-lg font-light text-white outline-none placeholder:text-white/20 focus:border-white/60"
-              />
-            </div>
-
-            <div className="flex flex-col gap-5 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
-              <p className="max-w-xs text-[10px] leading-5 text-white/30">
-                By submitting this form, you&apos;re simply starting a
-                conversation with MSYNTRA.
-              </p>
-
-              <button
-                type="submit"
-                className="group flex w-fit items-center gap-8 bg-[#9e6d48] px-7 py-5 text-[10px] uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#b48662]"
-              >
-                Send enquiry
-
-                <span className="transition-transform duration-300 group-hover:translate-x-2">
-                  →
-                </span>
-              </button>
-            </div>
-          </form>
+          <EnquiryForm />
         </div>
       </section>
 
