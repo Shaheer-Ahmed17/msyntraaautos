@@ -33,7 +33,7 @@ export default function PlanYourDrive() {
           {/* FINANCING CARD */}
           <div className="relative min-h-[460px] rounded-2xl overflow-hidden bg-[#EAE3D9] border border-[#D5C2B1]/40 group">
             <Image
-              src="/images/vehicles/Make-It-Yours(Home).png"
+              src="/images/dealership/Home/Make-It-Yours(Home).png"
               alt="Financing"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -68,7 +68,7 @@ export default function PlanYourDrive() {
           {/* TRADE-IN CARD */}
           <div className="relative min-h-[460px] rounded-2xl overflow-hidden bg-[#EAE3D9] border border-[#D5C2B1]/40 group">
             <Image
-              src="/images/vehicles/Start-Your-Next(Home).png"
+              src="/images/dealership/Home/Start-Your-Next(Home).png"
               alt="Trade in your vehicle"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -106,7 +106,7 @@ export default function PlanYourDrive() {
           {/* Left Side: Image with gradient mask fading to background color */}
           <div className="absolute inset-y-0 left-0 w-full md:w-1/2 z-0 pointer-events-none overflow-hidden">
             <Image
-              src="/images/vehicles/Experience-it(Home).png"
+              src="/images/dealership/Home/Experience-it(Home).png"
               alt="Interior Viewing"
               fill
               className="object-cover object-left transition-transform duration-700 group-hover:scale-105"

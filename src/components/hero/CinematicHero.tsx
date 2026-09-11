@@ -41,7 +41,7 @@ export default function CinematicHero() {
         className="absolute inset-0 z-0 will-change-transform"
       >
         <Image
-          src="/images/vehicles/Hero-Image.png"
+          src="/images/dealership/Home/Hero-Image.png"
           alt="MSYNTRA Automotive Hero"
           fill
           priority

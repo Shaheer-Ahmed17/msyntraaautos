@@ -357,7 +357,7 @@ export default function InventoryPage() {
       <section className="relative min-h-[620px] overflow-hidden bg-[#dcd7ce] sm:min-h-[680px] lg:min-h-[720px]">
         <div className="absolute inset-0">
           <Image
-            src="/images/vehicles/Collection-Hero.png"
+            src="/images/dealership/Inventory/Collection-Hero.png"
             alt="MSYNTRA automotive collection"
             fill
             priority

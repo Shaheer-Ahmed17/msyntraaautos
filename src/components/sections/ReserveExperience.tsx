@@ -10,7 +10,7 @@ export default function ReserveExperience() {
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/vehicles/Final-Drivee(Home).png"
+          src="/images/dealership/Home/Final-Drivee(Home).png"
           alt="Aston Martin Final Drive"
           fill
           priority

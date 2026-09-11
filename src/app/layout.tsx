@@ -35,33 +35,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
-      <head>
-        <style>{`
-          .goog-te-banner-frame,
-          iframe[class*="goog-te-banner-frame"],
-          .VIpgJd-Z3-9-b-L9-s-b,
-          .goog-te-gadget {
-            display: none !important;
-            visibility: hidden !important;
-          }
-
-          body {
-            top: 0px !important;
-            position: static !important;
-          }
-
-          #goog-gt-tt,
-          .goog-te-balloon-text,
-          div[id*="goog-gt-"] {
-            display: none !important;
-          }
-
-          .goog-text-highlight {
-            background-color: transparent !important;
-            box-shadow: none !important;
-          }
-        `}</style>
-      </head>
       <body>
         <Header />
         <Main>{children}</Main>
